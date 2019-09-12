@@ -26,6 +26,7 @@ app.get('/dropdown',(req,res)=>{
 app.get('/book',(req,res)=>{
   var request = require("request");
   console.log(req.param('citys'))
+  console.log(req.param('citys'))
 id=req.param('citys')
 if(id==7)
 {

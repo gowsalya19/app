@@ -3,7 +3,7 @@
  const hbs=require('hbs')
  const app=express()
  const restaurant=require('./restaurant')
-
+ const port=process.env.PORT || 3000
    const publicdirectory=path.join(__dirname,'../public')
    app.set('view engine','hbs')
   
@@ -251,6 +251,6 @@ request(options, function (error, response, body) {
 }
 })
 
- app.listen(3000,()=>{
-     console.log('Server is up on port 3000')
+ app.listen(port,()=>{
+     console.log('Server is up on port'+port)
  })
